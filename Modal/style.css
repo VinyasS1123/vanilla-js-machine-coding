@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#modalOverlay {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalBox {
+    position: relative;
+
+    width: 420px;
+    max-width: 90%;
+
+    background: white;
+    border-radius: 8px;
+
+    padding: 24px;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+
+    animation: popup 0.2s ease;
+}
+
+#modalBox h3 {
+    margin-top: 0;
+}
+
+#modalBox p {
+    line-height: 1.5;
+    color: #444;
+}
+
+#closeBtn {
+    position: absolute;
+
+    top: 10px;
+    right: 15px;
+
+    border: none;
+    background: transparent;
+
+    font-size: 28px;
+    cursor: pointer;
+
+    color: #666;
+}
+
+#closeBtn:hover {
+    color: black;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

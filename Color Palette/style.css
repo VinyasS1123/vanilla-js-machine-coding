@@ -1,0 +1,27 @@
+#colors {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+}
+
+.red {
+    background: red;
+    color: white;
+}
+
+.green {
+    background: green;
+    color: white;
+}
+
+.blue {
+    background: blue;
+    color: white;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Accordion</h1>
+    <div class="controls">
+        <button id="expand">Expand All</button>
+        <button id="collapse">Collapse All</button>
+    </div>
+    <div class="add-accordion">
+        <h2>Add New Accordion</h2>
+        <div class="form-group">
+            <label for="question">Question</label>
+            <input type="text" id="question" placeholder="Enter question...">
+        </div>
+        <div class="form-group">
+            <label for="answer">Answer</label>
+            <textarea id="answer" rows="5" placeholder="Enter answer..."></textarea>
+        </div>
+        <button id="addAccordion">
+            Add Accordion
+        </button>
+
+    </div>
+
+    <div id="accordionContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

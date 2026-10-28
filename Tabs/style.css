@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 60px 20px;
+}
+
+#tabs-container {
+    width: 650px;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+#tabs-navbar {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    background: #fafafa;
+}
+
+.tab {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    padding: 14px 18px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition:
+        background-color .25s,
+        color .25s,
+        transform .2s;
+}
+
+.tab:not(.active):hover:not(:disabled) {
+    background: #ececec;
+}
+
+.tab.active {
+    background: #2563eb;
+    color: white;
+}
+
+.tab:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.tab .close {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: background-color .2s;
+}
+
+.tab.active .close:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.tab:not(.active) .close:hover {
+    background: #dcdcdc;
+}
+
+.tab:disabled .close {
+    pointer-events: none;
+}
+
+#tabContent {
+    padding: 32px;
+    min-height: 180px;
+}
+
+#content {
+    font-size: 18px;
+    color: #444;
+    line-height: 1.7;
+}

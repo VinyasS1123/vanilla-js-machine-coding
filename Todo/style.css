@@ -1,0 +1,28 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 40px; /* space between filters and search */
+  margin: 20px 0;
+}
+
+#todoFilters,
+#searchSection {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+li.completed {
+  text-decoration: line-through;
+}
+
+span.deletedTodo {
+    text-decoration:line-through;
+    background-color: rgb(236, 230, 230);
+    color:black;
+}
+
+.deletedTodo {
+    padding: 4px 8px;
+    border-radius: 4px;
+}

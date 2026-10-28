@@ -1,0 +1,297 @@
+/* ---------- Global ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f4f6f9;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* ---------- Main Container ---------- */
+
+#mainContainer {
+    width: 900px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.12);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* ---------- Budget Controls ---------- */
+
+#budgetControls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+#totalBudgetInput {
+    width: 220px;
+    flex: none;
+}
+
+#budgetInfo {
+    margin-left: 30px;
+    min-width: 220px;
+    padding: 12px 18px;
+    background: #f8f9fa;
+    border-left: 5px solid #28a745;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+    text-align: center;
+}
+
+#budgetInfo:empty {
+    display: none;
+}
+
+/* ---------- Add Expense ---------- */
+
+#addExpenses {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+#expenseName {
+    width: 250px;
+    flex: none;
+}
+
+#expenseAmnt {
+    width: 160px;
+    flex: none;
+}
+
+#expenseCategory {
+    width: 150px;
+}
+
+/* ---------- Inputs ---------- */
+
+input,
+select {
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: .2s;
+}
+
+input:focus,
+select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 6px rgba(40,167,69,.25);
+}
+
+/* ---------- Buttons ---------- */
+
+button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    transition: .2s;
+}
+
+#totalBudgetBtn,
+#addExpense,
+#save {
+    background: #28a745;
+}
+
+#totalBudgetBtn:hover,
+#addExpense:hover,
+#save:hover {
+    background: #218838;
+}
+
+.edit-btn {
+    background: #0d6efd;
+}
+
+.edit-btn:hover {
+    background: #0b5ed7;
+}
+
+.delete-btn {
+    background: #dc3545;
+}
+
+.delete-btn:hover {
+    background: #bb2d3b;
+}
+
+#cancel {
+    background: #6c757d;
+}
+
+#cancel:hover {
+    background: #5a6268;
+}
+
+/* ---------- Expense Table ---------- */
+
+#expenseSummary {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background: #28a745;
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 14px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+tr:nth-child(even) {
+    background: #fafafa;
+}
+
+tr:hover {
+    background: #f2f2f2;
+}
+
+td:last-child {
+    display: flex;
+    gap: 8px;
+}
+
+#editInput,
+#editAmount {
+    width: 100%;
+    padding: 8px;
+}
+
+/* ---------- Dashboard ---------- */
+
+.summary {
+    display: flex;
+    align-items: stretch;
+    gap: 18px;
+    margin-top: 65px;
+}
+
+/* Cards */
+
+.summary-card {
+    width: 200px;
+    flex: none;
+
+    background: white;
+    border-radius: 10px;
+    padding: 16px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+}
+
+.summary-card h3 {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.summary-card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.total-card {
+    border-left: 5px solid #0d6efd;
+}
+
+.total-card p {
+    color: #0d6efd;
+}
+
+.balance-card {
+    border-left: 5px solid #28a745;
+}
+
+#balance.positive {
+    color: #28a745;
+}
+
+#balance.negative {
+    color: #dc3545;
+}
+
+/* ---------- Category Filter ---------- */
+
+#categoryFilter {
+    flex: 1;
+
+    background: white;
+    border-radius: 10px;
+    padding: 16px;
+
+    box-shadow: 0 3px 10px rgba(0,0,0,.08);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#categoryFilter label {
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#filterCategory {
+    width: 220px;
+}
+
+/* ---------- Warning ---------- */
+
+.warning {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #ffeaea;
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ---------- Empty State ---------- */
+
+.empty-state {
+    text-align: center;
+    padding: 35px;
+    color: #777;
+    font-style: italic;
+}

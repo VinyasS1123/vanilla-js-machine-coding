@@ -1,0 +1,26 @@
+Level 1
+Static tabs
+Active tab
+Click events
+Content switching
+
+
+Level 2
+We'll gradually add features such as:
+Active indicator
+Disabled tabs
+Dynamic tab creation
+Tab deletion
+Keyboard navigation (Arrow Left/Right)
+Default active tab
+
+
+
+Level 3 (Interview)
+We'll discuss patterns like:
+Data-driven tabs
+Lazy rendering
+Controlled vs uncontrolled tabs
+Dynamic content
+Reusable createTabs() architecture
+How React Tabs work internally

@@ -1,0 +1,6 @@
+body#light-mode{
+    background-color: white;
+}
+body#dark-mode{
+    background-color: black;
+}
